@@ -4,6 +4,15 @@
 	<title>TODO App</title>
 	<link rel="stylesheet" type="text/css" href="./app/styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="./app/styles/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./app/styles/reset.css"> -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   <meta name="description" content="A todo app written in plain JavaScript">
+   <meta name="author" content="William I. Olojede">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -12,12 +21,58 @@
 		</div>
 	</header>
 	<main>
-		<div>
-			<section></section>
-			<section></section>
-			<section></section>
+		<div class="container">
+			<section class="todo">
+				<div>
+					<h2>Todo</h2>
+					<ul class="todo__list">
+						<li class="todo__item">
+							<input type="text" value="Eat" class="todo__input">
+							<div class="todo__button">
+								<button class="todo__start">Start</button>
+								<button class="todo__delete">Delete</button>
+							</div>
+							
+						</li>
+						<li class="todo__item">
+							<input type="text" value="Swim" class="todo__input">
+							<div class="todo__button">
+								<button class="todo__start">Start</button>
+								<button class="todo__delete">Delete</button>
+							</div>
+						</li>
+						<li class="todo__item">
+							<input type="text" value="Run" class="todo__input">
+							<div class="todo__button">
+								<button class="todo__start">Start</button>
+								<button class="todo__delete">Delete</button>
+							</div>
+						</li class="todo__item">
+						<li class="todo__item">
+							<input type="text" value="Code" class="todo__input">
+							<div class="todo__button">
+								<button class="todo__start">Start</button>
+								<button class="todo__delete">Delete</button>
+							</div>
+						</li>
+					</ul>
+					<div class="todo__new">
+						<input type="text" class="todo__new-input" placeholder="...">
+						<button class="todo__add">Add</button>
+					</div>
+				</div>
+			</section>
+			<section class="doing">
+				<h2>Doing</h2>
+			</section>
+			<section class="done">
+				<h2>Done</h2>
+			</section>
 		</div>
 	</main>
+	<footer>
+		
+	</footer>
 	<script type="text/javascript" src="./dist/bundle.js"></script>
 </body>
 </html>
