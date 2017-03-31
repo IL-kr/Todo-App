@@ -41,7 +41,8 @@ header{
 .done{
 	width: 30.66666667%;
 	padding: 15px;
-	min-height: 400px;
+	padding-bottom: 50px;
+	min-height: 200px;
 	position: relative;
 	background-color: #492540;
 	border-radius: 10px;
@@ -60,7 +61,8 @@ header{
 	margin-right: 2%;
 	margin-left: 2%;
 }
-.todo__list{
+.todo__list, 
+.doing__list {
 	list-style: none;
 	padding: 0;
 }
@@ -71,6 +73,7 @@ header{
 	width: 100%;
 	font-size: 24px;
 	padding-left: 10px;
+	padding-right: 100px;
 	background: rgba(255,255,255, 0.1);
 	border: none;
 	border-radius:10px;
@@ -90,6 +93,7 @@ header{
 	left: 0;
 	border: 0;
 	padding-left: 20px;
+	padding-right: 55px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 }
@@ -133,8 +137,17 @@ header{
 	background-color: #5A9367;
 }
 
+.warning{
+  opacity: 0;
+  position: absolute;
+  top: 43%;
+  left: 50px;
+  color: #c03546;
+}
 
-
+p.warning.active{
+	opacity: 1;
+}
 
 
 
