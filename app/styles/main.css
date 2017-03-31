@@ -52,8 +52,9 @@ header{
 .doing h2,
 .done h2{
 	margin-top: 0;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: #fff;
+	font-family: 'Revalia', cursive;
 }
 
 .todo, 
@@ -62,7 +63,8 @@ header{
 	margin-left: 2%;
 }
 .todo__list, 
-.doing__list {
+.doing__list,
+.done__list {
 	list-style: none;
 	padding: 0;
 }
@@ -71,7 +73,7 @@ header{
 .todo__new-input{
 	height: 50px;
 	width: 100%;
-	font-size: 24px;
+	font-size: 16px;
 	padding-left: 10px;
 	padding-right: 100px;
 	background: rgba(255,255,255, 0.1);
@@ -114,11 +116,13 @@ header{
 	cursor: pointer;
 }
 
-.todo__start{
+.todo__start,
+.todo__done{
 	background-color: #5A9367;
 }
 .todo__start:hover,
-.todo__add:hover{
+.todo__add:hover,
+.todo__done:hover{
 	background-color: #3f6748;
 }
 
@@ -148,6 +152,30 @@ header{
 p.warning.active{
 	opacity: 1;
 }
+
+footer{
+	margin-top: 100px;
+	font-family: sans-serif;
+	font-style: italic;
+}
+
+
+footer p:nth-of-type(1){
+	margin-bottom: 0;
+}
+
+footer a{
+	color: #000;
+	text-decoration: underline;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
+	margin: 0 auto;
+	align-items: center;
+}
+
 
 
 

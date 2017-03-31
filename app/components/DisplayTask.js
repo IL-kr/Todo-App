@@ -1,6 +1,6 @@
 import { todoList } from './../selectors';
 
-function displayTask(e) {
+const displayTask = (e) => {
   const listItem = `
     <li class="todo__item">
       <input type="text" value="${e}" class="todo__input" readonly>
@@ -11,6 +11,6 @@ function displayTask(e) {
     </li>
   `;
   todoList.innerHTML += listItem;
-}
+};
 
 export default displayTask;

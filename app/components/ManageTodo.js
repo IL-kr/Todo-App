@@ -1,5 +1,6 @@
 import deleteTodo from './DeleteTodo';
 import startTodo from './StartTodo';
+import completeTodo from './CompleteTodo';
 
 function manageTodo(e) {
   const that = this; // used to pass this into deleteTodo
@@ -8,6 +9,8 @@ function manageTodo(e) {
       deleteTodo(e, that);
     } else if (e.target.className === 'todo__start') {
       startTodo(e, that);
+    } else if (e.target.className === 'todo__done') {
+      completeTodo(e, that);
     }
   }
 }
